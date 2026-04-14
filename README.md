@@ -1,24 +1,9 @@
-while True:
-    try:
-        l1 = float(input("\nLado 1: "))
-        l2 = float(input("Lado 2: "))
-        l3 = float(input("Lado 3: "))
-    except ValueError:
-        print("Erro: Digite apenas números")
-        continue # O continue é para voltar ao início do while se der erro
+Projeto Triângulos 📐
 
-     if (l1 + l2 > l3 ) and (l1 + l3 > l2) and (l2 + l3 > l1): # o "and" é usado para que tudo dentro dos "()" seja validado.
+Este é um programa simples em Python que recebe as medidas de três lados e:
+1. Verifica se os valores podem formar um triângulo.
+2. Classifica o triângulo como Equilátero, Isósceles ou Escaleno.
 
-        if (l1 == l2 == l3):
-            print("\n--- Triangulo equilátero ---")
-        elif l1 == l2 or l1 == l3 or l2 == l3:
-            print("\n--- Triangulo isósceles ---")
-        else:
-            print("\n--- Triangulo escaleno ---")
-    else:
-        print("Os valores informados não foram um triangulo")
-
-    pergunta = input("\nDeseja fazer outro cáculo? (s/n): ").lower()
-    if pergunta != 's':
-        print("Até logo!")
-        break
+## Como Executar
+Basta ter o Python instalado e rodar o comando:
+`python main.py`
